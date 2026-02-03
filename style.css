@@ -428,3 +428,38 @@ h3.my-profession{
     color: var(--text-black-700);
     
 }
+.timeline-location {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.timeline-location i {
+    color: #e63946;
+    margin-right: 6px;
+}
+.social-icons {
+    margin: 25px 0;
+    display: flex;
+    gap: 14px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    border: 2px solid var(--skin-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--skin-color);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--skin-color);
+    color: #fff;
+    transform: translateY(-5px);
+}
