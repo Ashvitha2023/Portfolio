@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ashvitha Thanya, a Front-End Web Developer and ECE student specializing in creating responsive, accessible, and high-performance websites.">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
@@ -10,64 +11,94 @@
 
 </head>
 <body>
-    <div class="main-container">
-        <div class="aside">
-            <div class="nav-toggler">
-                <span></span>
+    <!-- Theme Settings -->
+    <div class="theme-btn shadow-dark">
+        <i class="fa fa-moon"></i>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
             </div>
-            <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" ><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#" ><i class="fa fa-comment"></i>Contact</a></li>
-            </ul>
         </div>
-        <div class="main-content">
-            <section class="home section ">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello,my name is <span class="name">Ashvitha Thanya</span></h3>
-                            <h3 class="my-profession">I' m a <span class="typing">web designer</span></h3>
-                            <p>
-                                I am a motivated front-end web developer and college student who enjoys designing and developing responsive websites. I am constantly learning new technologies and applying them in projects to improve my development skills.
-                            </p>
-                            <div class="social-icons">
-    <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
-    <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
-    </a>
-</div>
-               <a href="#contact" class="btn hire-me">Hire Me</a>
-                        </div>
+    </header>
+
+    <section class="home section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="home-info padd-15">
+                    <h3 class="hello">Hello, my name is <span class="name">Ashvitha Thanya</span></h3>
+                    <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
+                    <p class="hero-subtext">
+                        I am a motivated front-end web developer and college student who enjoys designing and developing responsive websites. I am constantly learning new technologies and applying them in projects to improve my development skills.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ashvithathanya" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ashvithathanya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="#contact" class="btn hire-me lux-btn">Hire Me</a>
+                </div>
                         <div class="home-img padd-15">
-                            <img src="me.jpeg" alt="me">
+                            <div class="blob-wrapper">
+                                <!-- Blob Backgrounds -->
+                                <div class="bg-blob-navy"></div>
+                                <div class="bg-blob-pink"></div>
+                                <img src="me.jpeg" alt="Portrait of Ashvitha Thanya">
+                                
+                                <!-- Floating Cards -->
+                                <div class="floating-card card-1 shadow-dark">
+                                    <div class="icon-box"><i class="fa fa-check-square"></i></div>
+                                    <div class="card-text">
+                                        <h4>2K+</h4>
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                                <div class="floating-card card-2 shadow-dark">
+                                    <div class="icon-box"><i class="fa fa-star"></i></div>
+                                    <div class="card-text">
+                                        <h4>4.8</h4>
+                                        <span>Satisfaction</span>
+                                    </div>
+                                </div>
+                                <div class="floating-card card-3 shadow-dark">
+                                    <div class="icon-box img-box"><i class="fa fa-user"></i></div>
+                                    <div class="card-text">
+                                        <h4>Product Designer</h4>
+                                        <span>5 Years</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section> 
-            <section class="about section ">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>About me</h2>
+                            <h2>About Me</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
                            <div class="row">
                             <div class="about-text padd-15">
-                                <h3>I'm Ashvitha Thanya and <span>Web Developer</span></h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam recusandae quis nostrum dicta sapiente dolores ex. Amet temporibus sequi architecto dolor dicta laboriosam commodi mollitia! Expedita itaque consectetur veritatis?</p>
+                                <h3>I'm Ashvitha Thanya, a <span>Web Developer</span></h3>
+                                <p>I am a passionate and detail-oriented Front-End Web Developer with a strong foundation in modern web technologies. My focus is on creating responsive, accessible, and high-performance websites that deliver exceptional user experiences. I thrive on solving complex problems and turning innovative ideas into reality through clean and efficient code.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -189,18 +220,18 @@
                                             <div class="timeline-item">
                                                 <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2013 - 2015
+                                                        <i class="fa fa-calendar"></i>2023 - Present
                                                     </h3>
-                                                    <h4> Master in Computer Science</h4>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit rem vitae labore aliquid sapiente animi alias cupiditate explicabo ullam, aliquam, assumenda excepturi voluptate vel nostrum ipsam reiciendis id illo incidunt.</p>
+                                                    <h4> Personal Projects & Hackathons</h4>
+                                                    <p>Completed hands-on projects focusing on front-end development. Gained experience in creating responsive designs, optimizing performance, and utilizing modern version control systems.</p>
                                             </div>
                                             <div class="timeline-item">
                                                 <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2013 - 2015
+                                                        <i class="fa fa-calendar"></i>2023 - Present
                                                     </h3>
-                                                    <h4> Master in Computer Science</h4>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit rem vitae labore aliquid sapiente animi alias cupiditate explicabo ullam, aliquam, assumenda excepturi voluptate vel nostrum ipsam reiciendis id illo incidunt.</p>
+                                                    <h4> Technical Learning & Workshops</h4>
+                                                    <p>Participated in technical workshops and hackathons. Collaborated with peers to build innovative web applications, learning agile methodologies and improving problem-solving skills along the way.</p>
                                             </div>
                                             
                                         </div>
@@ -213,11 +244,11 @@
                 </div>
             </section>
 
-        <section class="service section">
+        <section class="service section" id="services">
             <div class="container">
                 <div class="row">
-                    <div class="section-title padd 15">
-                        <h2>Services</h2>
+                    <div class="section-title padd-15">
+                        <h2>OUR SERVICE</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -226,8 +257,8 @@
                             <div class="icon">
                                 <i class="fa fa-mobile-alt"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <h4>Responsive UI Design</h4>
+                            <p>I provide professional UI design services to build modern, device-friendly, and performant interfaces customized to your needs.</p>
                         </div>
                     </div>
                     <div class="service-item padd-15">
@@ -235,8 +266,8 @@
                             <div class="icon">
                                 <i class="fa fa-laptop-code"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h4>Frontend Development</h4>
+                            <p>Crafting clean, accessible, and well-structured code using modern tech to ensure your websites are secure and robust.</p>
                         </div>
                     </div>
                     <div class="service-item padd-15">
@@ -245,7 +276,7 @@
                                 <i class="fa fa-palette"></i>
                             </div>
                             <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Creating beautiful, aesthetic, and functional web designs that leave a lasting impression on your web visitors.</p>
                         </div>
                     </div>
                     <div class="service-item padd-15">
@@ -253,8 +284,8 @@
                             <div class="icon">
                                 <i class="fa fa-code"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <h4>Single Page Apps</h4>
+                            <p>Building dynamic, high-performance SPAs that feel like native applications and provide excellent user experiences.</p>
                         </div>
                     </div>
                     <div class="service-item padd-15">
@@ -262,8 +293,8 @@
                             <div class="icon">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <h4>SEO Optimization</h4>
+                            <p>Improving website structure and metadata to ensure your web applications rank well in search engines.</p>
                         </div>
                     </div>
                     <div class="service-item padd-15">
@@ -271,15 +302,193 @@
                             <div class="icon">
                                 <i class="fa fa-bullhorn"></i>
                             </div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <h4>Digital Marketing</h4>
+                            <p>Helping your brand grow with data-driven online marketing strategies, improved digital presence, and audience engagement.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        </div>
-    </div>
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio Item Filter -->
+                    <div class="portfolio-heading padd-15">
+                        <h2>My Last Projects :</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Web Project 1">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>E-Commerce Platform</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800" alt="Web Project 2">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Task Management App</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Web Project 3">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Personal Dashboard</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Web Project 4">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Social Media Integration</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800" alt="Web Project 5">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Fitness Tracker</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://images.unsplash.com/photo-1481481322826-2c1b978d3eb8?auto=format&fit=crop&q=80&w=800" alt="Web Project 6">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Weather Forecast App</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">Have You Any Questions?</h3>
+                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                <div class="row">
+                    <!-- Contact info item 1 -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Us On</h4>
+                        <p>+91 9345833351</p>
+                    </div>
+                    <!-- Contact info item 2 -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p>Theni, Tamil Nadu</p>
+                    </div>
+                    <!-- Contact info item 3 -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>ashvithakesavan2005@gmail.com</p>
+                    </div>
+                    <!-- Contact info item 4 -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                        <h4>Website</h4>
+                        <p>github.com/ashvithathanya</p>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- wrappers removed -->
     <script src="script.js"></script>
 </body>
 </html>
