@@ -39,5 +39,5 @@ portfolio/
 
 ## 📬 Contact
 - Email: ashvithakesavan2005@gmail.com
-- LinkedIn: [your profile](https://www.linkedin.com/in/ashvitha-thanya-k-ab2672292/)
+- LinkedIn: [Ashvitha Thanya K](https://www.linkedin.com/in/ashvitha-thanya-k-ab2672292/)
 - GitHub: [Ashvitha2023](https://github.com/Ashvitha2023)
