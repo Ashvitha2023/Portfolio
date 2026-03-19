@@ -1,494 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Ashvitha Thanya, a Front-End Web Developer and ECE student specializing in creating responsive, accessible, and high-performance websites.">
-    <title>Portfolio</title>
+    <title>Ashvitha Thanya | Premium Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
 </head>
-<body>
-    <!-- Theme Settings -->
-    <div class="theme-btn shadow-dark">
-        <i class="fa fa-moon"></i>
-    </div>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="logo">
-                    <a href="#"></a>
+
+<body class="dark-theme">
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">A<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="greeting">Hi there, I'm</p>
+                <h1 class="name">Ashvitha <span>Thanya</span></h1>
+                <h2 class="title">I build <span id="typing-text"></span><span class="cursor-blink">|</span></h2>
+                <p class="description">
+                    A passionate Front-End Developer crafting modern, high-performance, and visually stunning web
+                    experiences. Let's turn innovative ideas into reality.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
-                <ul class="nav">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-                <div class="nav-toggler">
-                    <span></span>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper tilt-effect">
+                    <img src="me.jpeg" alt="Developer setup">
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section class="home section" id="home">
+    <!-- About Section -->
+    <section id="about" class="about section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
+    </div>
+    <div class="about-content">
+
+      <div class="about-text glass-card reveal-left">
+        <h3>Who is Ashvitha?</h3>
+        <p>I am a detail-oriented Front-End Web Developer currently pursuing a BE in Electronics and
+          Communication Engineering. My journey bridges the gap between hardware understanding and
+          software elegance.</p>
+        <p>I specialize in creating responsive, accessible, and highly optimized UI designs. I thrive in
+          challenging environments where I can leverage my problem-solving skills to build seamless User
+          Experiences.</p>
+
+        <!-- ✅ UPDATED SOCIAL LINKS -->
+        <div class="about-social">
+          <h4>Find me on</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ashvitha-thanya-k-ab2672292/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Ashvitha2023" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-details glass-card reveal-right">
+        <h3>Personal Info</h3>
+        <ul class="info-list">
+          <li><strong>Name:</strong> Ashvitha Thanya</li>
+          <li><strong>Age:</strong> 20 Years</li>
+          <li><strong>Location:</strong> Theni, Tamil Nadu</li>
+          <li><strong>Degree:</strong> B.E. ECE (2023 - 2027)</li>
+          <li><strong>Email:</strong> ashvithakesavan2005@gmail.com</li>
+        </ul>
+        <a href="Resume.pdf" class="btn btn-primary mt-4">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="home-info padd-15">
-                    <h3 class="hello">Hello, my name is <span class="name">Ashvitha Thanya</span></h3>
-                    <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
-                    <p class="hero-subtext">
-                        I am a motivated front-end web developer and college student who enjoys designing and developing responsive websites. I am constantly learning new technologies and applying them in projects to improve my development skills.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ashvithathanya" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/ashvithathanya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <a href="#contact" class="btn hire-me lux-btn">Hire Me</a>
-                </div>
-                        <div class="home-img padd-15">
-                            <div class="blob-wrapper">
-                                <!-- Blob Backgrounds -->
-                                <div class="bg-blob-navy"></div>
-                                <div class="bg-blob-pink"></div>
-                                <img src="me.jpeg" alt="Portrait of Ashvitha Thanya">
-                                
-                                <!-- Floating Cards -->
-                                <div class="floating-card card-1 shadow-dark">
-                                    <div class="icon-box"><i class="fa fa-check-square"></i></div>
-                                    <div class="card-text">
-                                        <h4>2K+</h4>
-                                        <span>Projects</span>
-                                    </div>
-                                </div>
-                                <div class="floating-card card-2 shadow-dark">
-                                    <div class="icon-box"><i class="fa fa-star"></i></div>
-                                    <div class="card-text">
-                                        <h4>4.8</h4>
-                                        <span>Satisfaction</span>
-                                    </div>
-                                </div>
-                                <div class="floating-card card-3 shadow-dark">
-                                    <div class="icon-box img-box"><i class="fa fa-user"></i></div>
-                                    <div class="card-text">
-                                        <h4>Product Designer</h4>
-                                        <span>5 Years</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="section-title">
+                <h2>My <span>Skills</span></h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category glass-card reveal-up">
+                    <i class="fas fa-code category-icon"></i>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3 / SCSS</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">GSAP</span>
                     </div>
                 </div>
-            </section> 
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                           <div class="row">
-                            <div class="about-text padd-15">
-                                <h3>I'm Ashvitha Thanya, a <span>Web Developer</span></h3>
-                                <p>I am a passionate and detail-oriented Front-End Web Developer with a strong foundation in modern web technologies. My focus is on creating responsive, accessible, and high-performance websites that deliver exceptional user experiences. I thrive on solving complex problems and turning innovative ideas into reality through clean and efficient code.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p>Birthday : <span>02 November 2005</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Age : <span>20</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Email : <span>ashvithakesavan2005@gmail.com</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Degree : <span>Electronics and Communication Engineering</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Phone : <span>+91 9345833351</span></p>
-                                    </div>
-                                    <div class="info-item padd-15 ">
-                                        <p>City : <span>Theni</span></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="buttons padd-15">
-                                        <a href="#" class="btn">Download CV</a>
-                                        
-                                    </div>
-                                </div>
-                
-                            </div>
-                            <div class="skills padd-15">
-                                <div class="row">
-                                    <div class="skill-item padd-15">
-                                        <h5>C</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>JAVA</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>HTML</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>CSS</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>MySQL</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Javascript</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width:86%"></div>
-                                            <div class="skill-percent">86%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="education padd-15">
-                                <h3 class="title">Education</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2022 - 2023
-                                                    </h3>
-                                                    <span class="timeline-location">
-        <i class="fa fa-map-marker"></i> Velammal Bodhi Campus (CBSE)
-    </span>
-                                                    <h4> Higher Secondary Education (12th standard) - Bio Maths</h4>
-                                                    <p>Completed schooling at Velammal Bodhi Campus with a strong academic foundation and interest in technology and engineering.</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2023 - 2027
-                                                    </h3>
-                                                    <span class="timeline-location">
-        <i class="fa fa-map-marker"></i> Bannari Amman Institute of Technology
-    </span>
-                                                    <h4> Bachelor of Engineering (ECE)</h4>
-                                                    <p>Currently pursuing BE in Electronics and Communication Engineering.
-        Strong interest in programming and web development, with solid
-        fundamentals in electronics, digital systems, and hands-on academic projects.</p>
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="experience padd-15">
-                                <h3 class="title"> Experience</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2023 - Present
-                                                    </h3>
-                                                    <h4> Personal Projects & Hackathons</h4>
-                                                    <p>Completed hands-on projects focusing on front-end development. Gained experience in creating responsive designs, optimizing performance, and utilizing modern version control systems.</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2023 - Present
-                                                    </h3>
-                                                    <h4> Technical Learning & Workshops</h4>
-                                                    <p>Participated in technical workshops and hackathons. Collaborated with peers to build innovative web applications, learning agile methodologies and improving problem-solving skills along the way.</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="skill-category glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-code-branch category-icon"></i>
+                    <h3>Languages & DB</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">MySQL</span>
                     </div>
                 </div>
+                <div class="skill-category glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-tools category-icon"></i>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Accessibility</span>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-        <section class="service section" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>OUR SERVICE</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured <span>Projects</span></h2>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card tilt-effect reveal-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                            alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>A modern admin dashboard with real-time analytics, dynamic charts, and dark mode support.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                            <span>Chart.js</span>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-mobile-alt"></i>
-                            </div>
-                            <h4>Responsive UI Design</h4>
-                            <p>I provide professional UI design services to build modern, device-friendly, and performant interfaces customized to your needs.</p>
+                <!-- Project 2 -->
+                <div class="project-card tilt-effect reveal-up" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+                            alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <h4>Frontend Development</h4>
-                            <p>Crafting clean, accessible, and well-structured code using modern tech to ensure your websites are secure and robust.</p>
+                    <div class="project-info">
+                        <h3>Weather App Concept</h3>
+                        <p>Beautiful glassmorphic weather application that pulls data from OpenWeatherMap API with
+                            smooth animations.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS Grid</span>
+                            <span>Fetch API</span>
                         </div>
                     </div>
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-palette"></i>
-                            </div>
-                            <h4>Web Design</h4>
-                            <p>Creating beautiful, aesthetic, and functional web designs that leave a lasting impression on your web visitors.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card tilt-effect reveal-up" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800"
+                            alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-code"></i>
-                            </div>
-                            <h4>Single Page Apps</h4>
-                            <p>Building dynamic, high-performance SPAs that feel like native applications and provide excellent user experiences.</p>
-                        </div>
-                    </div>
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h4>SEO Optimization</h4>
-                            <p>Improving website structure and metadata to ensure your web applications rank well in search engines.</p>
-                        </div>
-                    </div>
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner">
-                            <div class="icon">
-                                <i class="fa fa-bullhorn"></i>
-                            </div>
-                            <h4>Digital Marketing</h4>
-                            <p>Helping your brand grow with data-driven online marketing strategies, improved digital presence, and audience engagement.</p>
+                    <div class="project-info">
+                        <h3>Task Master</h3>
+                        <p>Productivity app with drag-and-drop functionality, local storage saving, and priority
+                            tagging.</p>
+                        <div class="project-tech">
+                            <span>Vanilla JS</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Portfolio Section -->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Portfolio Item Filter -->
-                    <div class="portfolio-heading padd-15">
-                        <h2>My Last Projects :</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Web Project 1">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>E-Commerce Platform</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800" alt="Web Project 2">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>Task Management App</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Web Project 3">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>Personal Dashboard</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Web Project 4">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>Social Media Integration</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800" alt="Web Project 5">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>Fitness Tracker</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6 -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="https://images.unsplash.com/photo-1481481322826-2c1b978d3eb8?auto=format&fit=crop&q=80&w=800" alt="Web Project 6">
-                            </div>
-                            <div class="portfolio-info">
-                                <h4>Weather Forecast App</h4>
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In <span>Touch</span></h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info glass-card reveal-left">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Don't like forms? Send me an email directly.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ashvithakesavan2005@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9345833351</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Theni, Tamil Nadu, India</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3 class="contact-title padd-15">Have You Any Questions?</h3>
-                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                <div class="row">
-                    <!-- Contact info item 1 -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Call Us On</h4>
-                        <p>+91 9345833351</p>
-                    </div>
-                    <!-- Contact info item 2 -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                        <h4>Location</h4>
-                        <p>Theni, Tamil Nadu</p>
-                    </div>
-                    <!-- Contact info item 3 -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p>ashvithakesavan2005@gmail.com</p>
-                    </div>
-                    <!-- Contact info item 4 -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                        <h4>Website</h4>
-                        <p>github.com/ashvithathanya</p>
-                    </div>
-                </div>
-                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                <!-- Contact Form -->
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row">
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
+                <div class="contact-form-wrapper glass-card reveal-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
                         </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
                         </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
                         </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Send Message</button>
-                            </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder=" " rows="5"></textarea>
+                            <label for="message">Your Message</label>
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-        </section>
-    <!-- wrappers removed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Ashvitha Thanya. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
