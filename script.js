@@ -241,3 +241,45 @@ counters.forEach(counter => {
         ease: "power2.out"
     });
 });
+
+// EmailJS Setup
+emailjs.init("tUA07YkjRJZhDPPUQ"); // ← paste your public key here
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const btn = this.querySelector('.submit-btn');
+    btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+    btn.disabled = true;
+
+    const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    };
+
+    emailjs.send("service_2u0czc4", "template_gremuu5", templateParams)
+        .then(() => {
+            btn.innerHTML = '<span>Message Sent ✓</span>';
+            btn.style.background = "#28a745";
+            this.reset();
+
+            setTimeout(() => {
+                btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
+                btn.style.background = "";
+                btn.disabled = false;
+            }, 4000);
+        })
+        .catch((error) => {
+            console.error(error);
+            btn.innerHTML = '<span>Failed. Try again</span>';
+            btn.style.background = "#dc3545";
+            btn.disabled = false;
+
+            setTimeout(() => {
+                btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
+                btn.style.background = "";
+            }, 4000);
+        });
+});
